@@ -21,29 +21,16 @@ export default class PresentationScreen extends React.Component {
 
           <View style={styles.section} >
             <Text style={styles.sectionText} >
-              Default screens for development, debugging, and alpha testing
-              are available below.
+              Here is where your mindful garden plant will turn up and show you stats or something.
             </Text>
           </View>
 
-          <RoundedButton onPress={NavigationActions.componentExamples}>
-            Component Examples Screen
+          <RoundedButton onPress={NavigationActions.practice}>
+            Practice
           </RoundedButton>
 
-          <RoundedButton onPress={NavigationActions.usageExamples}>
-            Usage Examples Screen
-          </RoundedButton>
-
-          <RoundedButton onPress={NavigationActions.apiTesting}>
-            API Testing Screen
-          </RoundedButton>
-
-          <RoundedButton onPress={NavigationActions.theme}>
-            Theme Screen
-          </RoundedButton>
-
-          <RoundedButton onPress={NavigationActions.deviceInfo}>
-            Device Info Screen
+          <RoundedButton onPress={NavigationActions.learn}>
+            Learn
           </RoundedButton>
 
         </ScrollView>
