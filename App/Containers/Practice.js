@@ -1,10 +1,11 @@
 // @flow
 
 import React from 'react'
-import { ScrollView, Text } from 'react-native'
 import { connect } from 'react-redux'
-// Add Actions - replace 'Your' with whatever your reducer is called :)
-// import YourActions from '../Redux/YourRedux'
+import { ScrollView, Text, Image, View } from 'react-native'
+import { Images } from '../Themes'
+import FullButton from '../Components/FullButton'
+import RoundedButton from '../Components/RoundedButton'
 import { Actions as NavigationActions } from 'react-native-router-flux'
 
 // Styles
@@ -19,9 +20,29 @@ class Practice extends React.Component {
 
   render () {
     return (
-      <ScrollView style={styles.container}>
-        <Text>Practice Container</Text>
-      </ScrollView>
+      <View style={styles.mainContainer}>
+        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+        <ScrollView style={styles.container}>
+          <View style={styles.centered}>
+            <Image source={Images.clearLogo} style={styles.logo} />
+          </View>
+
+          <View style={styles.section} >
+            <Text style={styles.sectionText} >
+              Here is where your mindful garden plant will turn up and show you stats or something.
+            </Text>
+          </View>
+
+          <RoundedButton onPress={NavigationActions.session}>
+            New sesh
+          </RoundedButton>
+
+          <FullButton text='first saved session' onPress={NavigationActions.session} />
+          <FullButton text='second saved session' onPress={NavigationActions.session} />
+          <FullButton text='third saved session' onPress={NavigationActions.session} />
+
+        </ScrollView>
+      </View>
     )
   }
 }
