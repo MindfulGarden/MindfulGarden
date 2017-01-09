@@ -1,16 +1,16 @@
 // @flow
 
 import React from 'react'
-import { ScrollView, Text } from 'react-native'
 import { connect } from 'react-redux'
-// Add Actions - replace 'Your' with whatever your reducer is called :)
-// import YourActions from '../Redux/YourRedux'
+import { ScrollView, Text, Image, View } from 'react-native'
+import { Images } from '../Themes'
+import RoundedButton from '../Components/RoundedButton'
 import { Actions as NavigationActions } from 'react-native-router-flux'
 
 // Styles
 import styles from './Styles/SessionStyle'
 
-class Session extends React.Component {
+class Practice extends React.Component {
 
   // constructor (props) {
   //   super(props)
@@ -19,9 +19,30 @@ class Session extends React.Component {
 
   render () {
     return (
-      <ScrollView style={styles.container}>
-        <Text>Session Container</Text>
-      </ScrollView>
+      <View style={styles.mainContainer}>
+        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+        <ScrollView style={styles.container}>
+
+          <RoundedButton onPress={NavigationActions.session}>
+            Select time
+          </RoundedButton>
+
+          <View style={styles.centered}>
+            <Image source={Images.clearLogo} style={styles.logo} />
+          </View>
+
+          <View style={styles.section} >
+            <Text style={styles.sectionText} >
+              Here is where your mindful garden plant will turn up and show you stats or something.
+            </Text>
+          </View>
+
+          <RoundedButton onPress={NavigationActions.session}>
+            Start timer
+          </RoundedButton>
+
+        </ScrollView>
+      </View>
     )
   }
 }
@@ -36,4 +57,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Session)
+export default connect(mapStateToProps, mapDispatchToProps)(Practice)

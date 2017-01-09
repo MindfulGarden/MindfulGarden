@@ -38,11 +38,6 @@ class DrawerContent extends Component {
     NavigationActions.apiTesting()
   }
 
-  handlePressTheme = () => {
-    this.toggleDrawer()
-    NavigationActions.theme()
-  }
-
   handlePressDevice = () => {
     this.toggleDrawer()
     NavigationActions.deviceInfo()
@@ -61,7 +56,6 @@ class DrawerContent extends Component {
         <DrawerButton text='Component Examples' onPress={this.handlePressComponents} />
         <DrawerButton text='Usage Examples' onPress={this.handlePressUsage} />
         <DrawerButton text='API Testing' onPress={this.handlePressAPI} />
-        <DrawerButton text='Themes' onPress={this.handlePressTheme} />
         <DrawerButton text='Device Info' onPress={this.handlePressDevice} />
       </ScrollView>
     )
