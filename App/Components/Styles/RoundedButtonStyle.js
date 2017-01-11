@@ -5,7 +5,7 @@ import { Fonts, Colors, Metrics } from '../../Themes/'
 
 export default StyleSheet.create({
   button: {
-    height: 55,
+    height: 50,
     borderRadius: 30,
     marginHorizontal: Metrics.section,
     marginVertical: Metrics.baseMargin,
@@ -16,7 +16,7 @@ export default StyleSheet.create({
     color: Colors.snow,
     textAlign: 'center',
     fontWeight: 'bold',
-    letterSpacing: 6,
+    letterSpacing: 4,
     backgroundColor: 'transparent',
     fontSize: Fonts.size.medium,
     marginVertical: Metrics.baseMargin
