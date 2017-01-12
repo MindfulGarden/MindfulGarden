@@ -1,7 +1,7 @@
 // @flow
 
 import { StyleSheet } from 'react-native'
-import { Colors, Metrics } from '../../Themes'
+import { Colors, Metrics, Images } from '../../Themes'
 
 export default StyleSheet.create({
   container: {
@@ -48,7 +48,6 @@ export default StyleSheet.create({
     color: Colors.silver
   },
   topLogo: {
-    alignSelf: 'center',
-    resizeMode: 'contain'
+    alignSelf: 'center'
   }
 })

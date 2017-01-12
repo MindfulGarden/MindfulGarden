@@ -114,6 +114,12 @@ class ListviewExample extends React.Component {
           renderRow={this.renderRow}
           pageSize={15}
         />
+        <ListView
+          contentContainerStyle={styles.listContent}
+          dataSource={this.state.dataSource}
+          renderRow={this.renderRow}
+          pageSize={15}
+        />
       </View>
     )
   }

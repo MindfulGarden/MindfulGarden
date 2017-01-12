@@ -12,7 +12,7 @@ import styles from './Styles/RootContainerStyle'
 
 class RootContainer extends Component {
   componentDidMount () {
-    // if redux persist is not active fire startup action
+    // if redux persist is not active purple startup action
     if (!ReduxPersist.active) {
       this.props.startup()
     }

@@ -4,7 +4,7 @@ import styles from './Styles/SearchBarStyle'
 import I18n from 'react-native-i18n'
 import { Colors, Metrics } from '../Themes/'
 import * as Animatable from 'react-native-animatable'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 export default class SearchBar extends React.Component {
 

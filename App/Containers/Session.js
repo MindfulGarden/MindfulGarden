@@ -1,20 +1,32 @@
 // @flow
 
 import React from 'react'
+import { connect } from 'react-redux'
 import { ScrollView, Text, Image, View } from 'react-native'
 import { Images } from '../Themes'
 import RoundedButton from '../Components/RoundedButton'
 import { Actions as NavigationActions } from 'react-native-router-flux'
 
 // Styles
-import styles from './Styles/PresentationScreenStyle'
+import styles from './Styles/SessionStyle'
 
-export default class PresentationScreen extends React.Component {
+class Practice extends React.Component {
+
+  // constructor (props) {
+  //   super(props)
+  //   this.state = {}
+  // }
+
   render () {
     return (
       <View style={styles.mainContainer}>
         <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
         <ScrollView style={styles.container}>
+
+          <RoundedButton onPress={NavigationActions.session}>
+            Select time
+          </RoundedButton>
+
           <View style={styles.centered}>
             <Image source={Images.plant} style={styles.logo} />
           </View>
@@ -25,12 +37,8 @@ export default class PresentationScreen extends React.Component {
             </Text>
           </View>
 
-          <RoundedButton onPress={NavigationActions.practice}>
-            Practice
-          </RoundedButton>
-
-          <RoundedButton onPress={NavigationActions.learn}>
-            Learn
+          <RoundedButton onPress={NavigationActions.session}>
+            Start timer
           </RoundedButton>
 
         </ScrollView>
@@ -38,3 +46,15 @@ export default class PresentationScreen extends React.Component {
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Practice)

@@ -1,4 +1,5 @@
 // @flow
+import { Metrics } from '../../Themes/'
 
 export default {
   container: {
@@ -6,6 +7,8 @@ export default {
     padding: 20
   },
   logo: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    height: Metrics.images.larger,
+    width: Metrics.images.larger
   }
 }

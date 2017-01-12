@@ -9,7 +9,7 @@ export default StyleSheet.create({
     height: Metrics.images.logo,
     width: Metrics.images.logo,
     resizeMode: 'contain',
-    marginTop: 90
+    marginTop: 40
   },
   centered: {
     alignItems: 'center'
