@@ -28,7 +28,7 @@ class Practice extends React.Component {
           </RoundedButton>
 
           <View style={styles.centered}>
-            <Image source={Images.clearLogo} style={styles.logo} />
+            <Image source={Images.plant} style={styles.logo} />
           </View>
 
           <View style={styles.section} >

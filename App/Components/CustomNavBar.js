@@ -12,7 +12,7 @@ export default class CustomNavBar extends React.Component {
         <TouchableOpacity style={Styles.leftButton} onPress={NavigationActions.pop}>
           <Icon name='chevron-left' size={34} color={Colors.snow} />
         </TouchableOpacity>
-        <Image style={Styles.logo} source={Images.clearLogo} />
+        <Image style={Styles.logo} source={Images.mindGarden} />
         <View style={Styles.rightButton} />
       </Animated.View>
     )

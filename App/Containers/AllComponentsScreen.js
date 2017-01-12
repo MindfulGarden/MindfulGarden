@@ -42,9 +42,6 @@ class AllComponentsScreen extends React.Component {
               of fundamental components for a given application.  Use this merge-friendly way for your team
               to show/use/test components.  Examples are registered inside each component's file for quick changes and usage identification.
             </Text>
-            <Text style={styles.subtitle} >
-              All components that register examples will be rendered below:
-            </Text>
           </View>
 
           {ExamplesRegistry.render()}

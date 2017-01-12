@@ -13,10 +13,10 @@ export default StyleSheet.create({
     color: Colors.snow
   },
   cardContainer: {
-    backgroundColor: Colors.ember,
-    borderColor: 'black',
+    backgroundColor: Colors.windowTint,
+    borderColor: Colors.clear,
     borderWidth: 1,
-    borderRadius: 2,
+    borderRadius: 3,
     shadowColor: Colors.panther,
     shadowOffset: {
       height: 7,
