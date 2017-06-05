@@ -34,7 +34,7 @@ class Practice extends React.Component {
           </View>
 
           <RoundedButton onPress={NavigationActions.session}>
-            New sesh
+            New session
           </RoundedButton>
 
           <FullButton text='first saved session' onPress={NavigationActions.session} />
